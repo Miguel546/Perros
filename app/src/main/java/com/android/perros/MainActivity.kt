@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     val itemType = object : TypeToken<List<Perro>>() {}.type
     val itemList = gson.fromJson<List<Perro>>(json, itemType)
     override fun onCreate(savedInstanceState: Bundle?) {
+        //HolaComentario
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         perrosRecyclerView = findViewById(R.id.perrosRecyclerView)
